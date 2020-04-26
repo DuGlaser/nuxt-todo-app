@@ -1,5 +1,9 @@
 <template>
-  <div class="todo-item" @dblclick="handleMarked">
+  <div
+    class="todo-item"
+    :class="{ 'is-done-item': todo.isDone }"
+    @dblclick="handleMarked"
+  >
     <span :class="{ 'is-done': todo.isDone }">{{ todo.body }}</span>
   </div>
 </template>
@@ -18,7 +22,6 @@ export default {
         body: this.todo.body,
         isDone: !this.todo.isDone
       }
-      console.log(newTodo)
       this.editTodo(newTodo)
     }
   }
@@ -29,13 +32,27 @@ export default {
 .todo-item {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   width: 100%;
-  padding: 1.5rem;
+  height: 4rem;
   margin-bottom: 1rem;
-  border-left: #3e96d5 3px solid;
+  background-color: #fff;
+  border-left: #3e96d5 8px solid;
   box-shadow: 1px 4px 4px #ccc;
 }
+
+.todo-item:hover {
+  box-shadow: 1px 4px 9px #ccc;
+}
+
+.todo-item span {
+  font-size: 1.2rem;
+}
+
+.is-done-item {
+  border-left: #d53e3e 8px solid;
+}
+
 .is-done {
   text-decoration: line-through;
 }

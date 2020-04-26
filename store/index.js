@@ -11,7 +11,6 @@ const getters = {
 const actions = {
   async getTodos({ commit }) {
     const res = await axios.get(BASE_URL)
-    console.log(res.data)
     commit('setTodos', res.data)
   },
 
