@@ -1,12 +1,11 @@
 # nuxt-todo-app
 
 > This is a simple todo app with nuxt.
-<div display="flex" style="aline-items: center; width: 100%;">
-<img src="./docs/ss.png" width="80%">
-</div>
+<img src="./docs/ss.png" width="100%">
 
 ## Build Setup
 
+### front
 ```bash
 # install dependencies
 $ yarn install
@@ -21,5 +20,12 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+### server
+サーバーサイドはnestjsで実装しています。  
+ソースコードについては以下のリポジトリにあります。  
+<a href="https://github.com/DuGlaser/nest-todo-app">
+<img src="./docs/server.png" width="800px">
+</a>
+
