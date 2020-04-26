@@ -36,6 +36,15 @@ const actions = {
     } catch (err) {
       console.log(err)
     }
+  },
+  async deleteTodo({ commit }, id) {
+    try {
+      await axios.get(`${BASE_URL}/delete/${id}`)
+      const res = await axios.get(BASE_URL)
+      commit('setTodos', res.data)
+    } catch (err) {
+      console.log(err)
+    }
   }
 }
 const mutations = {
