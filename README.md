@@ -25,7 +25,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ### server
 サーバーサイドはnestjsで実装しています。  
 ソースコードについては以下のリポジトリにあります。  
+<kbd>
 <a href="https://github.com/DuGlaser/nest-todo-app">
 <img src="./docs/server.png" width="800px">
 </a>
-
+</kbd>
