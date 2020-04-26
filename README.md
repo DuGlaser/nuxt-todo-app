@@ -1,6 +1,9 @@
 # nuxt-todo-app
 
 > This is a simple todo app with nuxt.
+<div display="flex" style="aline-items: center; width: 100%;">
+<img src="./docs/ss.png" width="80%">
+</div>
 
 ## Build Setup
 
