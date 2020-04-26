@@ -22,6 +22,7 @@ export default {
         body: this.title,
         isDone: false
       }
+      this.title = ''
       this.createTodo(newTodo)
     }
   }
